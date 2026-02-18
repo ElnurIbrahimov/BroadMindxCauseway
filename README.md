@@ -2,11 +2,16 @@
 
 ## Integration of Causal Counterfactual Reasoning with Latent Program Execution
 
+| Component | Repository |
+|---|---|
+| **Causeway** | [github.com/ElnurIbrahimov/causeway](https://github.com/ElnurIbrahimov/causeway) |
+| **BroadMind** | [github.com/ElnurIbrahimov/BroadMind](https://github.com/ElnurIbrahimov/BroadMind) |
+
 ---
 
 ## 1. What Each System Does
 
-### Causeway — "What would change if I did X?"
+### [Causeway](https://github.com/ElnurIbrahimov/causeway) — "What would change if I did X?"
 
 A parameter-efficient causal adapter (794K params) that bolts onto frozen Transformers. Given a Transformer's hidden state and a candidate action, it returns a structured delta vector describing what would change under intervention.
 
@@ -29,7 +34,7 @@ Key techniques: Pearl's do-operator (abduction-action-prediction), learned spars
 
 Results: 0.9494 correlation on GPT-2 hidden states.
 
-### BroadMind — "How do I execute this program?"
+### [BroadMind](https://github.com/ElnurIbrahimov/BroadMind) — "How do I execute this program?"
 
 A neural program executor (447K params) that generates and executes its own internal programs at runtime. Not a Transformer — it synthesizes latent instructions during forward execution and runs them to produce outputs.
 
